@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap" rel="stylesheet">
+    <title>Nature's Future</title>
 </head>
 <body>
-    
+    <div class="main">
+        <div class="title">
+            <h1>Mother Nature Diary</h1>
+            <h2>What is Mother Nature plannig for you today ?</h2>
+        </div>
+
+        <div class="content">
+            Pick a point in the world!
+            <input type="text" name="search" id="text">
+            <button class="button-3" role="button" onclick="getTemp()">Don't Click me</button>
+            <div id="locationDiv">
+                <p id="tempid">Temperature: </p>
+                <p id="feelid">But you'll feel like: </p>
+                <p id="locationid">This is where you chose: </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
